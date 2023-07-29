@@ -54,25 +54,24 @@ padding-left: ;
   display: flex;
   align-items: center;
   gap: 17px;
+  flex-wrap: wrap;
 }
 .Tags p {
   display: inline-flex;
   padding: 8px 20px;
   align-items: flex-start;
-  gap: 10px;
   border-radius: 10px;
   background: #fff;
+  margin: 0;
 }
 .About {
   border-radius: 10px;
   background: #eef6fb;
-  min-width: 679px;
   height: 363px;
   padding: 20px 0 20px 20px;
   margin-top: 30px;
 }
 .About p {
-  min-width: 632px;
   height: 111px;
   color: var(--new-text-color, #133c55);
   font-family: Gilroy;
@@ -139,24 +138,16 @@ padding-left: ;
   display: flex;
   gap: 20px;
 }
-<<<<<<< HEAD
 
-=======
->>>>>>> 6235629 (mobile view fixed)
-@media screen and (min-width: 250px) and (max-width: 878px) {
+@media (max-width: 878px) {
   .box{
     overflow: hidden;
     max-width: 100%;
   }
   .EventPageBox{
-    min-width: 100%;
+    margin-right: 20%;
   }
-<<<<<<< HEAD
-  
-=======
->>>>>>> 6235629 (mobile view fixed)
   .Details{
-    overflow-wrap: break-word;
     height: auto;
   }
   .In-person_event {
