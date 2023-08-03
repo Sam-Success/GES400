@@ -4,21 +4,21 @@
   left: 50%;
   transform: translate(-50%, -50%);
   display: flex;
-  width: 1031px;
-  height: 888px;
   flex-shrink: 0;
 }
 .CheckOut {
   filter: none !important;
   background: #eef6fb;
   width: 653px;
-  height: 888px;
   flex-shrink: 0;
   padding-left: 50px;
 }
 .CheckOut h3 {
   padding-top: 27px;
   text-align: center;
+}
+.CheckOut h4 {
+  padding-left: 27%;
 }
 .CheckOut p,
 span {
@@ -101,11 +101,7 @@ span {
 .OrderSummary h3 {
   padding-left: 24px;
 }
-<<<<<<< HEAD
-
-=======
->>>>>>> 6235629 (mobile view fixed)
-@media screen and (min-width: 200px) and (max-width: 960px) {
+@media  (max-width: 1009px) {
   .container {
     align-items: center;
     position: fixed;
@@ -117,6 +113,40 @@ span {
     margin-top: 100px;
   }
   .OrderSummary{
+    display: none;
+  }
+}
+@media (max-width: 717px){
+  .container {
+    align-items: center;
+    position: fixed;
+    top: 35%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: inline-flex; 
+    flex-direction: column-reverse;
+    margin-top: 100px;
+  }
+  .CheckOut {
+    display: grid;
+    justify-content: center;
+  }
+  .CheckOut form{
+    margin-top: 0;
+  justify-self: center;
+  }
+  .CheckboxDiv {
+    color: #81868a;
+    font-size: 1.2rem;
+    display: flex;
+    justify-content: center;
+  }
+  .Form input {
+    justify-content: center;
+    display: block;
+    padding-left: 20px;
+  }
+  .Form label {
     display: none;
   }
 }

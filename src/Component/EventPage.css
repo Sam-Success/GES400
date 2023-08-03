@@ -1,7 +1,6 @@
 .box{
   min-width: 100%;
   position: absolute;
-  display: flex;
   overflow: hidden;
 }
 .navbar{
@@ -14,14 +13,13 @@
   position: fixed;
 }
 .EventPageBox{
-  min-width: 82%;
-  margin-left: 18%
+  max-width: 100%;
+  margin-left: 18%;
+  height: 100%;
 }
-.EventPage{
-padding-left: ;
-}
-.EventPage h2, h4 {
-  padding-left: 20px ;
+.EventPageBox h2, h4 {
+  padding-left: 20px;
+  margin-left: 10%;
 }
 .EventPage h2 {
   font-size: 35px;
@@ -33,6 +31,7 @@ padding-left: ;
 .fleidImg {
   min-width: 100%;
   margin-left: -.5% ;
+  max-height: 400px;
 }
 .In-person_event {
   max-width: 100%;
@@ -46,9 +45,10 @@ padding-left: ;
   line-height: normal;
   border-radius: 10px;
   background: #eef6fb;
-  min-width: 60%;
-  height: 610px;
+  min-width: 50%;
   padding: 20px 0 20px 20px;
+  margin-left: 10%;
+  padding-right: 1px;
 }
 .Details span {
   display: flex;
@@ -70,6 +70,8 @@ padding-left: ;
   height: 363px;
   padding: 20px 0 20px 20px;
   margin-top: 30px;
+  margin-left: 10%;
+  max-width: 60%;
 }
 .About p {
   height: 111px;
@@ -79,6 +81,7 @@ padding-left: ;
   font-style: normal;
   font-weight: 400;
   line-height: normal;
+  margin-right: 10px;
 }
 .About span {
   display: inline-flex;
@@ -87,12 +90,16 @@ padding-left: ;
   gap: 10px;
   align-items: center;
 }
+.About h2{
+  padding-left: 0;
+}
 .Tickets {
   border-radius: 10px;
   background: #eef6fb;
   min-width: 30%;
   height: 610px;
   padding: 20px 0 20px 20px;
+  margin-right: 15px;
 }
 .Tickets h5 {
   color: var(--new-text-color, #133c55);
@@ -103,20 +110,20 @@ padding-left: ;
   border-radius: 10px;
   background: #deeef7;
   padding: 8px 20px;
+  max-width: 80%;
 }
 .Tickets button {
-  display: flex;
-  min-width: 40%;
-  padding: 8px 20px 8px 20px;
-  align-items: flex-start;
+  justify-content: center;
+  min-width: 80%;
   gap: 10px;
   border-radius: 10px;
   border-style: none;
   background: #deeef7;
   margin-top: 5px;
+  padding: 10px;
 }
 .Quantities {
-  min-width: 80%;
+  max-width: 85%;
   height: 188px;
   flex-shrink: 0;
   border-radius: 10px;
@@ -141,25 +148,41 @@ padding-left: ;
 
 @media (max-width: 878px) {
   .box{
-    overflow: hidden;
     max-width: 100%;
-  }
-  .EventPageBox{
-    margin-right: 20%;
   }
   .Details{
     height: auto;
+    margin-left: 0%;
+    padding-right: 10px;
+    min-width: auto;
+  padding: 20px 0 20px 20px;
+  padding-right: 1px;
+  overflow-wrap: break-word;
   }
   .In-person_event {
     overflow: hidden;
-    display: block;
+    display: flex;
+    flex-direction: column;
     min-width: 100%;
   }
   .Tickets{
     min-width: 100%;
     margin-top: 20px;
   }
-  /* .fleidImg{
-    height: 150px;
-  } */
+  .Tickets h5{
+    max-width: 87%;
+  }
+  .About {
+    max-width: 100%;
+    margin-left: 0%;
+  }
+  .About h3{
+    padding-top: inherit;
+  } 
+}
+@media (max-width: 500px){
+  .fleidImg{
+    height: 100px;
+    margin-left: -.5%;
+  }
 }

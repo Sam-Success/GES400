@@ -11,11 +11,11 @@ function EventPage() {
     <div className="navbar">
     </div>
     <div className="EventPageBox">
-      <div className="EventPage">
+  
         <img className="fleidImg" src="/Public/fleid.png" alt="Fleid" />
         <h2>Cyprus Photo Exhibition</h2>
         <h4>In-person event</h4>
-        </div>
+      
         <div className="In-person_event">
           <div className="Details">
             <h3>Details</h3>

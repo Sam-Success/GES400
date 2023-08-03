@@ -5,7 +5,7 @@ const CheckOut = ({ onClose, setSwitchModal }) => {
       <div className="container">
         <div className="CheckOut">
           <h3>CheckOut</h3>
-          <h4>Ticket Name</h4>
+          <h4>Ticket Holder Details</h4>
           <form className="Form" action="">
             <div className="FirstName">
               <label htmlFor="">First Name</label>
@@ -28,6 +28,7 @@ const CheckOut = ({ onClose, setSwitchModal }) => {
             <label htmlFor="">Phone Number</label>
             <input type="number" name="" id="" placeholder="+234" />
           </form>
+          <div className="CheckboxDiv">
           <p>Gender</p>
           <span className="Checkbox">
             <input type="checkbox" name="" id="" />
@@ -37,6 +38,7 @@ const CheckOut = ({ onClose, setSwitchModal }) => {
             <input type="checkbox" name="" id="" />
             Female
           </span>
+          </div>
           <span className="terms">
             <p>
               By clicking Register , I agree to the{" "}
